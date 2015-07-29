@@ -1,0 +1,5 @@
+/AppControl/gen/*
+/AppControl/bin/*
+/AppControl/.settings/*
+.classpath
+.project
