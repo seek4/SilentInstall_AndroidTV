@@ -1,0 +1,41 @@
+{
+"appControl":{
+	"version":"1.0",
+	"installApps":[
+		{"appName":"Install_1",
+		"packageName":"com.example.install.one",
+		"installType":"1",
+		"version":"1.0",
+		"appUrl":"http://yangtong.me/appFile/Install_1.apk"
+		},
+		{"appName":"Install_2",
+		"packageName":"com.example.install.two",
+		"installType":"1",
+		"version":"1.0",
+		"appUrl":"http://yangtong.me/appFile/Install_2.apk"
+		},
+		{"appName":"Update_2.0",
+		"packageName":"com.example.update",
+		"installType":"1",
+		"version":"2.0",
+		"appUrl":"http://yangtong.me/appFile/Update_2.0.apk"
+		},
+		{"appName":"Install_3",
+		"packageName":"com.example.install.three",
+		"installType":"1",
+		"version":"1.0",
+		"appUrl":"http://yangtong.me/appFile/Install_3.apk"
+		}
+	],
+	"uninsApps":[
+		{"appName":"Unins_1",
+		"packageName":"com.example.uninstall.one",
+		"uninsType":"1"
+		},
+		{"appName":"Unins_2",
+		"packageName":"com.example.uninstall.two",
+		"uninsType":"1"
+		}
+	]
+}
+}
