@@ -1,41 +1,31 @@
 package com.changhong.appcontrol;
 
-import android.support.v7.app.ActionBarActivity;
-import android.content.Context;
+import android.app.Activity;
 import android.content.Intent;
-import android.media.AudioManager;
-import android.media.MediaPlayer;
-import android.media.MediaRouter;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-public class MainActivity extends ActionBarActivity {
-
-	protected Button sendButton;
-	
+public class MainActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
-		sendButton = (Button)this.findViewById(R.id.button_send);
+		final String ACTION_CONTROL = "com.changhong.action.appcontrol";
 		
-		sendButton.setOnClickListener(new OnClickListener() {
+		Button btnTest = (Button)this.findViewById(R.id.btn_test);
+		btnTest.setOnClickListener(new OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {
-				Log.i("yangtong","ButtonClick");
 				Intent intent = new Intent();
-				intent.setAction("com.changhong.appcontrol.transfer");
+				intent.setAction(ACTION_CONTROL);
 				sendBroadcast(intent);
 			}
 		});
+	
+		
 	}
-
-
 }
