@@ -12,7 +12,7 @@ including install some apps,uninstall some apps and upgrade some apps.
 The info kept in json files,an actual demo is [control_1.json](https://github.com/seek4/SilentInstall_AndroidTV/blob/master/control_1.json)<br>
 
 ###Note
-The app must gain the system authority to run successfully. 
+The app must obtain the system authority to realize silent-install. 
 
 
 ####contact me
