@@ -75,6 +75,7 @@ public class ControlService extends Service {
 		
 		//	Local appListªÒ»°
 		localAnalysis = new LocalAnalysis(ControlService.this);
+		localAnalysis.getLocalApps();
 		localApps = localAnalysis.localApps;
 		usrApps = localAnalysis.usrApps;
 		

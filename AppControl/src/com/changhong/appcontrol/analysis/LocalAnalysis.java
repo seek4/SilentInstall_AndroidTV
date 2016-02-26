@@ -22,11 +22,12 @@ public class LocalAnalysis {
 	private Context context;
 	public LocalAnalysis(Context context){
 		this.context = context;
-		getLocalApps();
+		//getLocalApps();
 	}
 	
 	/**
-	 * 得到当前所有的本地应用及用户应用
+	 * 得到当前所有的本地应用及用户应用,保存在localApps,
+	 * 如果是用户应用，保存在usrApps.
 	 */
 	public void getLocalApps(){
 		localApps = new ArrayList<LocalApp>();
